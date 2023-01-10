@@ -1,0 +1,327 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(assets/WallpaperDog.jpg);
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-rows: 0.7fr 1.5fr 1.5fr 0.2fr 0.5fr;
+    grid-template-areas: "nav nav nav nav nav "
+                         "item1 item1 item1 item1 item1" 
+                         "item2 item2 item2 item2 item2"
+                         "item3 item3 item3 item3 item3"   
+                         "item4 item4 item4 item4 item4";
+}
+
+.nav{
+    display: grid;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.829);
+    border-top: 3px solid rgba(255, 255, 255, 0.829);
+    background-image: url(assets/fancy-pants.jpg);
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    height: 150px;
+    grid-area: nav;
+}
+.nav img{
+    width: 8%;
+    margin-left: 17px;
+}
+
+.logo{
+    margin: 25px;
+    margin-left: 29px;
+}
+
+#rebel_nav{
+    color: white;
+    margin: 5px;
+    margin-left: 0;
+}
+.liste{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.liste li{
+    display: flex;
+    align-items: center;
+}
+li{
+    color: rgba(255, 255, 255, 0.856);
+}
+#sith{
+    color: rgba(255, 255, 255, 0.842);
+    text-decoration: underline red 3px;
+    padding: 1%;
+}
+#jedi{
+    color: rgba(255, 255, 255, 0.849);
+    text-decoration: underline rgb(0, 17, 255) 3px;
+    padding: 1%;
+
+}
+#rebels{
+    color: rgba(255, 255, 255, 0.842);
+    text-decoration: underline red 3px;
+    padding: 1%;
+}
+#empire{
+    color: rgba(255, 255, 255, 0.808);
+    text-decoration: underline blue 3px;
+    padding: 1%;
+}
+.item1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: item1;
+}
+
+.image1 img{
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 50px;
+    width: 60%;
+}
+.image2 img{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 50px;
+}
+.image3 img{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 50px;
+}
+.image4 img{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.288);
+    border-radius: 50px;
+}
+.image5 img{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 50px;
+}
+
+.item2{
+    display: grid;
+    border-top: 3px solid rgba(255, 255, 255, 0.863);
+    grid-template-columns: 1fr;
+    background-image: url(assets/fancy-pants.jpg);
+    grid-area: item2;
+}
+.text2{
+    display: flex;
+    color: rgba(255, 255, 255, 0.897);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+.item3{
+    display: grid;
+    text-align: center;
+    border-top: 3px solid white;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    grid-area: item3;
+}
+.item3 p{
+    color: black;
+    
+}
+.page1{
+    border: 3px solid black;
+}
+strong{
+    font-size: 20px;
+    color: coral;
+}
+.item4{
+    display: grid;
+    border-top: 3px solid white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-image:url(assets/WallpaperDog.jpg) ;
+    grid-area: item4;
+}
+.contact{
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps img{
+  margin: 50px;
+  width: 50%;
+  height: 70%;
+}
+.inputer{
+    margin-top: 70px;
+    margin: 70px;
+    align-items: center;
+    color: white;
+}
+.mini-photo{
+    margin: 25px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+
+   
+}
+.mini-photo img{
+    margin: 0;
+    margin-top: 90px;
+    width: 80px;
+    height: 90px;
+    height: px;
+}
+.mini-photo p{
+    position: absolute;
+    margin-top:60px ;
+    margin-right: 20px;
+    color: white;
+}
+.form_line p{
+    color: white;
+}
+h6{
+    color: gray;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+    .container{
+        background-image: url(assets/WallpaperDog.jpg);
+        display: grid;
+        width: 100vw;
+        height: 100vw;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr 0.5fr;
+        grid-template-rows: 0.7fr 1.5fr 1.5fr 0.2fr 0.5fr;
+        grid-template-areas: "nav nav nav nav nav "
+                             "item1 item1 item1 item1 item1" 
+                             "item2 item2 item2 item2 item2"
+                             "item3 item3 item3 item3 item3"   
+                             "item4 item4 item4 item4 item4";
+    }
+    .nav{
+        width: 86.9%;
+    }
+    .nav img{
+        width: 27%;
+        margin-left: 17px;
+    }
+    .image1 img{
+        background-color: rgba(255, 255, 255, 0.356);
+        border-radius: 50px;
+        width: 50%;
+    }
+    .image2 img{
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.336);
+        border-radius: 50px;
+    }
+    .image3 img{
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.322);
+        border-radius: 50px;
+    }
+    .image4 img{
+        margin: 0;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.288);
+        border-radius: 50px;
+    }
+    .image5 img{
+        width: 33%;
+        background-color: rgba(255, 255, 255, 0.26);
+        border-radius: 50px;
+    }
+    .item1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+        grid-area: item1;
+    }
+    .text2 h2{
+        margin: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.897);
+        
+     }
+     .item3 p{
+        text-align: center;
+     }
+    .item2{
+        display: grid;
+        border: 3px solid rgba(255, 255, 255, 0.863);
+        grid-template-columns: 0.9fr;
+        background-image: url(assets/fancy-pants.jpg);
+        grid-area: item2;
+    }
+    .item3{
+        display: grid;
+        text-align: center;
+        border: 3px solid white;
+        grid-template-columns: 0.5fr;
+        background-color: white;
+        grid-area: item3;
+    }
+    .item3 p{
+        margin: 0;
+        color: black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .item4{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        background-image:url(assets/WallpaperDog.jpg) ;
+        grid-area: item4;
+    }
+    .maps img{
+      width: 50%;
+      height: 40%;
+    }
+    .inputer{
+        margin: 0;
+        margin-top: 25px;
+        width: 60%;
+        align-items: center;
+        color: white;
+    }
+    .mini-photo{
+        margin: 0;
+        margin-right: 180px;
+        display: flex;
+        justify-content: center;
+    
+       
+    }
+    .mini-photo img{
+        margin: 0;
+        margin-top: 70px;
+        width: 80px;
+        height: px;
+    }
+    .mini-photo p{
+        position: absolute;
+        margin-top:40px ;
+        margin-right: 20px;
+        color: white;
+    }
+    .form_line p{
+        color: white;
+    }
+}
